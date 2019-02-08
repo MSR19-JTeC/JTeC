@@ -41,4 +41,4 @@ The final output of this script is: (i) the totality of the source code of the i
 In addition to the scripts described in Section "JTeC generation steps", the dataset generation process makes use of two utility scripts and one utility file, namely:
 * [request_manager.py](https://github.com/MSR19-JTeC/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
 * [credentials.py](https://github.com/MSR19-JTeC/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
-* [token.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/token.txt) - Text file containing the GitHub username and personal GitHub access token.
+* [tokens.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
