@@ -33,7 +33,7 @@ The final output of this script consists of a local .csv file containing the fol
 3. [select.py](https://github.com/MSR19-JTeC/JTeC/blob/master/selection_test_count.py) - Script selecting among each forked project either the original or forked project according to which one contains more test classes (Step 4). <br>
 The final output of this script consists of a local .csv file containing the following information: _user_, _repository_, _id_, _hash_, _date_, _n_tests_, _fork_id_.
 
-4. [download_tests.py](https://github.com/MSR19-JTeC/JTeC/blob/master/download_tests.py) - Script downloading the test classes of the repositories selected by `repository_selection.py` (Step 5). <br>
+4. [download_tests.py](https://github.com/MSR19-JTeC/JTeC/blob/master/download_tests.py) - Script downloading the test classes of the repositories selected by `select.py` (Step 5). <br>
 This script takes as input the list of repositories for which we want to download the test classes and create the dataset. <br>
 The final output of this script is: (i) the totality of the source code of the identified test classes, and (ii) a .csv file containing the following fields: _user_, _repository_, _id_,_fork_id_,_hash_, _date_, _n_tests_, _SLOC_, _size_
 
