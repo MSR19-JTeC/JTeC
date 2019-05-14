@@ -1,0 +1,27 @@
+// JTeC Quality Script Configuration File
+{
+	// Copy Output Dataset In New Folder (Values: true, false)
+	"BOOL_TS_Clone": true,
+
+	// Create Test Suite Index (Values: true, false)
+	"BOOL_TS_Index": true,
+
+	// Select Fork Projects (Values: true, false)
+	"BOOL_TS_Fork": true,
+
+	// Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
+	"MIN_TS_Year": 0,
+	"MAX_TS_Year": -1,
+
+	// Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
+	"MIN_TS_Size": 0,
+	"MAX_TS_Size": -1,
+
+	// Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
+	"MIN_TS_SLOCs": 0,
+	"MAX_TS_SLOCs": -1,
+
+	// Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
+	"MIN_TS_Bytes": 0,
+	"MAX_TS_Bytes": -1
+}
