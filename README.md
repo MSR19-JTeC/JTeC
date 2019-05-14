@@ -66,4 +66,4 @@ Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/mas
 
 
 ### Quality Filter Script
-After having changed the configuration file, run the quality filter script with [python3 quality-filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3 quality-filter.py)
+After having changed the configuration file, run the quality filter script [quality-filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3 quality-filter.py) via `python3 quality-filter.py`
