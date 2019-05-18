@@ -43,27 +43,3 @@ In addition to the scripts described in Section "JTeC generation steps", the dat
 * [request_manager.py](https://github.com/MSR19-JTeC/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
 * [credentials.py](https://github.com/MSR19-JTeC/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
 * [tokens.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
-
-## JTeC Quality Filter
-
-JTeC provides a simple method to trim the dataset in order to make it satisfy some quality criteria, e.g., test suite size measured by number of test cases in the test suite.
-The criteria can be customized by simply changing a configuration file.
-
-### Configuration file
-Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json)
-
-- `BOOL_TS_Clone`: Copy Output Dataset In New Folder (Values: true, false)
-- `BOOL_TS_Index`: Create Test Suite Index (Values: true, false)
-- `BOOL_TS_Fork`: Select Fork Projects (Values: true, false)
-- `MIN_TS_Year`: Lower Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
-- `MAX_TS_Year`: Upper Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_Size`: Lower Bound on Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
-- `MAX_TS_Size`: Upper Bound on Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_SLOCs`: Lower Bound on Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
-- `MAX_TS_SLOCs`: Upper Bound on Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_Bytes`: Lower Bound on Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)	
-- `MAX_TS_Bytes`: Upper Bound on Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
-
-
-### Quality Filter Script
-After having changed the configuration file, run the quality filter script [quality-filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3 quality-filter.py) via `python3 quality-filter.py`
